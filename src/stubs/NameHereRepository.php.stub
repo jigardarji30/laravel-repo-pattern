@@ -1,0 +1,38 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+namespace App\Repositories\NameHere;
+
+use App\Repositories\NameHere\NameHereInterface;
+
+class NameHereRepository implements NameHereInterface
+{
+
+    /**
+     * @var \App\Models\NameHere
+     */
+    private $smallNameHere;
+
+    /**
+     * NameHereRepository constructor.
+     *
+     * @param \App\Models\NameHere $smallNameHere
+     */
+    public function __construct()
+    {
+    }
+
+    /**
+     * @param array $field
+     *
+     * @return mixed
+     */
+    public function index(array $field)
+    {
+    }
+}

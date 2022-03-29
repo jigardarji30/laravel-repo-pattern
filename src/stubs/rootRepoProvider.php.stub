@@ -1,0 +1,40 @@
+<?php
+
+namespace App\Repositories;
+
+use Illuminate\Support\ServiceProvider;
+use App\Repositories\NameHere\NameHereInterface;
+use App\Repositories\NameHere\NameHereRepository;
+use Illuminate\Contracts\Support\DeferrableProvider;
+
+
+class RepositoryServiceProvider extends ServiceProvider implements DeferrableProvider
+{
+
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->registerNameHereRepository();
+    }
+
+    protected function registerNameHereRepository()
+    {
+        $this->app->bind(NameHereInterface::class, function () {
+            return new NameHereRepository(new NameHere());
+        });
+    }
+
+    /**
+     * @return array
+     */
+    public function provides()
+    {
+        return [
+            NameHereInterface::class,
+        ];
+    }
+}

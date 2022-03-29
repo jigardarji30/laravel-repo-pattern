@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Services\NameHere\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use App\Services\NameHere\NameHereServices;
+use App\Repositories\NameHere\NameHereInterface;
+use Illuminate\Contracts\Support\DeferrableProvider;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+class NameHereServicesProvider extends ServiceProvider implements DeferrableProvider
+{
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->registerService();
+    }
+
+    protected function registerService()
+    {
+
+        $this->app->bind(NameHereServices::class, function ($app) {
+            return new NameHereServices($app[NameHereInterface::class]);
+        });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return [NameHereServices::class];
+    }
+}
