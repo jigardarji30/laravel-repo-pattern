@@ -1,5 +1,5 @@
 {
-    "name": "Jigard/laravel-repo-pattern",
+    "name": "jigard/laravel-repo-pattern",
     "description": "Laravel Repo Pattern Generator",
     "license": "mit",
     "require": {
