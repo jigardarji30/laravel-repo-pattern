@@ -33,7 +33,7 @@ class MakeRepoPattern extends Command
      */
     public function handle()
     {
-        $this->init();
+        
         $this->name = $this->argument('name');
         $this->fs = new Filesystem();
 
