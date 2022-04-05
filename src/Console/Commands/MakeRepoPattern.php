@@ -15,7 +15,7 @@ class MakeRepoPattern extends Command
      * @var string
      */
     protected $signature = '
-    make:crud {name}
+    make:repo_structure {name}
     ';
 
     /**
@@ -23,7 +23,7 @@ class MakeRepoPattern extends Command
      *
      * @var string
      */
-    protected $description = 'Generate CRUD Controller/Model/Migration/View/Form';
+    protected $description = 'Generate repository structure';
     protected $softDelete = true;
 
     /**
