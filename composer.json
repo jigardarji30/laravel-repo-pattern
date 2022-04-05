@@ -13,9 +13,7 @@
             "Jigard\\LaravelRepoPattern\\": "src"
         }
     },
-    "require": {
-        "jigard/laravel-repo-pattern":"dev-master@dev"
-    },
+    "require": {},
     "extra": {
         "laravel": {
             "providers": [
