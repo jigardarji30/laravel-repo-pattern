@@ -14,5 +14,18 @@
         }
     },
     "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jigard\\LaravelRepoPattern\\LaravelRepoPatternGeneratorServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+          "type": "vcs",
+          "url":  "git@github.com:jigardarji30/repo-pattern.git"
+        }
+      ],
     "minimum-stability": "dev"
 }
