@@ -29,5 +29,5 @@
           "url":  "git@github.com:jigardarji30/repo-pattern.git"
         }
       ],
-   "minimum-stability": "stable"
+   "minimum-stability": "dev"
 }
