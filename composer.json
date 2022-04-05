@@ -1,10 +1,7 @@
 {
     "name": "jigard/laravel-repo-pattern",
     "description": "Laravel Repo Pattern Generator",
-    "license": "mit",
-    "require": {
-        "laravel/framework": "^5.5|^6.0"
-    },
+    "license": "MIT",
     "authors": [
         {
             "name": "jigard",
@@ -16,18 +13,6 @@
             "Jigard\\LaravelRepoPattern\\": "src"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Jigard\\LaravelRepoPattern\\LaravelRepoPatternGeneratorServiceProvider"
-            ]
-        }
-    },
-    "repositories": [
-        {
-          "type": "vcs",
-          "url":  "git@github.com:jigardarji30/repo-pattern.git"
-        }
-      ],
-   "minimum-stability": "dev"
+    "require": {},
+    "minimum-stability": "dev"
 }
