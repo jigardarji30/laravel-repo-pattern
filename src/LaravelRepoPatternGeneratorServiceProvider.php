@@ -1,6 +1,6 @@
 <?php
 
-namespace Jigard\LaravelRepoPattern;
+namespace Jigardarji\LaravelRepoPattern;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class LaravelRepoPatternGeneratorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->commands(\Jigard\LaravelRepoPattern\Console\Commands\MakeRepoPattern::class);
+        $this->commands(\Jigardarji\LaravelRepoPattern\Console\Commands\MakeRepoPattern::class);
     }
 
     public function boot()

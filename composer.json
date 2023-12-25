@@ -1,5 +1,5 @@
 {
-    "name": "jigard/laravel-repo-pattern",
+    "name": "jigardarji/laravel-repo-pattern",
     "description": "Laravel Repo Pattern Generator",
     "license": "MIT",
     "authors": [
@@ -10,14 +10,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "Jigard\\LaravelRepoPattern\\": "src"
+            "Jigardarji\\LaravelRepoPattern\\": "src"
         }
     },
     "require": {},
     "extra": {
         "laravel": {
             "providers": [
-                "Jigard\\LaravelRepoPattern\\LaravelRepoPatternGeneratorServiceProvider"
+                "Jigardarji\\LaravelRepoPattern\\LaravelRepoPatternGeneratorServiceProvider"
             ]
         }
     },

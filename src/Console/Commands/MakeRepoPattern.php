@@ -1,6 +1,6 @@
 <?php
 
-namespace Jigard\LaravelRepoPattern\Console\Commands;
+namespace Jigardarji\LaravelRepoPattern\Console\Commands;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -33,7 +33,7 @@ class MakeRepoPattern extends Command
      */
     public function handle()
     {
-        
+
         $this->name = $this->argument('name');
         $this->fs = new Filesystem();
 

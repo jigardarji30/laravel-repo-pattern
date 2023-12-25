@@ -6,7 +6,7 @@ Laravel Repository Pattern is a package for make code in well structured form. I
 
 Use composer to install Laravel Repository Pattern Package
 
-> composer require jigard/laravel-repo-pattern
+> composer require jigardarji/laravel-repo-pattern
 
 ### Generate Repository Pattern files by using following command
 
